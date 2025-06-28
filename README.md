@@ -1,1 +1,1 @@
-# a-simple-str8ts-solver
+# A Simple Str8ts Solver
