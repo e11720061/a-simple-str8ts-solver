@@ -34,6 +34,5 @@ analyzePuzzles = readAndAnalyzePuzzles outputCsvPath puzzleFolderPath solve
 
 main :: IO ()
 main = do
-    putStrLn "A Simple Str8ts Solver"
     downloadPuzzles
     analyzePuzzles

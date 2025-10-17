@@ -33,7 +33,7 @@ type OutputCsvPath = FilePath
 
 readAndAnalyzePuzzles :: OutputCsvPath -> PuzzleFolderPath -> Solver -> IO()
 readAndAnalyzePuzzles outputCsvPath puzzleFolderPath solver = do
-    writeAsNewLineInto outputCsvPath (intercalate excelSeparator ["Date", "Difficulty", "Number of Solutions", "Equal to Official Solution", "Run-Time", "Number of Black Squares", "Number of Blank Squares", "Symmetrical"])
+    writeAsNewLineInto outputCsvPath (intercalate excelSeparator ["Date", "Difficulty", "Number of solutions", "Equal to official solution", "Run-time (ns)", "Number of black squares", "Number of blank squares", "Symmetrical"])
     puzzlePaths <- getFilePaths puzzleFolderPath
     mapM_ (readAndAnalyzePuzzle solver outputCsvPath) puzzlePaths
 
