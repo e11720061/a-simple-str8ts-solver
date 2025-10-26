@@ -8,11 +8,11 @@ import AdvancedSolver
 --------------------------------------------------
 
 puzzleFolderPath :: PuzzleFolderPath
-puzzleFolderPath = "../puzzles"
+puzzleFolderPath = "../runtime-analysis/puzzle-data/test"
 
 -- must point to an existing .csv file 
 outputCsvPath :: OutputCsvPath
-outputCsvPath = "../analysis/analysis.csv"
+outputCsvPath = "../runtime-analysis/test.csv"
 
 --------------------------------------------------
 
@@ -34,5 +34,5 @@ analyzePuzzles = readAndAnalyzePuzzles outputCsvPath puzzleFolderPath solve
 
 main :: IO ()
 main = do
-    downloadPuzzles
+    -- downloadPuzzles
     analyzePuzzles
